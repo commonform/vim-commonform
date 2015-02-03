@@ -11,16 +11,16 @@ endif
 syntax sync fromstart
 
 syntax region cfSummary start="^" end="\(\\\\\|\!\!\)" oneline
-hi def link cfSummary Underlined
+hi def link cfSummary PreProc
 
 syntax region cfUse start="<" end=">" oneline
-hi def link cfUse Keyword
+hi def link cfUse Special
 
 syntax region cfField start="\[" end="\]" oneline
 hi def link cfField Todo
 
 syntax region cfReference start="{" end="}" oneline
-hi def link cfReference Special
+hi def link cfReference Keyword
 
 syntax region cfDefinition start="\"\"" end="\"\"" oneline
 hi def link cfDefinition Define
