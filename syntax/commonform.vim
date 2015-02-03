@@ -10,6 +10,9 @@ endif
 
 syntax sync fromstart
 
+syntax match cfComment /^\s*#.\+/
+hi def link cfComment Comment
+
 syntax region cfSummary start="^" end="\(\\\\\|\!\!\)" oneline
 hi def link cfSummary PreProc
 
