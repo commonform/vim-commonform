@@ -1,2 +1,2 @@
 " Common Form
-autocmd BufNewFile,BufReadPost *.commonform set filetype=commonform
+autocmd BufNewFile,BufReadPost *.commonform setlocal filetype=commonform
