@@ -13,8 +13,8 @@ syntax sync fromstart
 syntax match cfComment /^\s*#.\+/
 hi def link cfComment Comment
 
-syntax region cfSummary start="^" end="\(\\\\\|\!\!\)" oneline
-hi def link cfSummary PreProc
+syntax region cfHeading start="^" end="\(\\\\\|\!\!\)" oneline
+hi def link cfHeading PreProc
 
 syntax region cfUse start="<" end=">" oneline
 hi def link cfUse Special
