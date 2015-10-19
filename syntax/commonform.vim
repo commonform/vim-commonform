@@ -13,7 +13,7 @@ syntax sync fromstart
 syntax match cfComment /^\s*#.\+/
 hi def link cfComment Comment
 
-syntax region cfHeading start="^" end="\(\\\\\|\!\!\)" oneline
+syntax region cfHeading start="^\s*\\" end="\(\\\|\!\!\)" oneline
 hi def link cfHeading PreProc
 
 syntax region cfUse start="<" end=">" oneline
@@ -28,10 +28,10 @@ hi def link cfReference Keyword
 syntax region cfDefinition start="\"\"" end="\"\"" oneline
 hi def link cfDefinition Define
 
-syntax region cfConspicuous start="!!!" end=" " oneline
+syntax region cfConspicuous start="!!" end=" " oneline
 hi def link cfConspicuous Tag
 
-syntax match cfInvalidCharacters "[^\x00-\x7F]"
+syntax match cfInvalidCharacters "[^\x20-\x7E]|\t"
 hi def link cfInvalidCharacters Error
 
 let b:current_syntax = "commonform"
