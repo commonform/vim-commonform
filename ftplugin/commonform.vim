@@ -9,6 +9,7 @@ endif
 let b:did_ftplugin = 1
 
 setlocal comments=:# commentstring=#\ %s
+setlocal suffixesadd+=cform,commonform,cftemplate
 
 augroup CommonFormBufUpdate | augroup END
 augroup CommonFormBufNew | augroup END
